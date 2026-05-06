@@ -1,0 +1,173 @@
+:root {
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+
+  --blue-950: hsl(217, 54%, 11%);
+  --blue-900: hsl(216, 50%, 16%);
+  --blue-800: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  background: var(--blue-950);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--blue-500);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background: var(--blue-900);
+  width: 18.333rem;
+  padding: 1.389rem;
+  border-radius: 1.111rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  border-radius: 1.111rem;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(0, 255, 247, 0.4);
+  border-radius: 1.111rem;
+}
+
+.container:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  font-size: 5.556rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading {
+  color: var(--white);
+  font-weight: 700;
+  transition: 0.3s ease;
+  font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+
+.heading:hover,
+.heading:focus,
+.heading:focus-visible {
+  color: var(--cyan-400);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+
+.info span,
+.info p {
+  display: flex;
+  align-items: center;
+}
+
+span img {
+  margin-right: 0.278rem;
+}
+
+.ETH {
+  color: var(--cyan-400);
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  border-top: 0.056rem solid var(--blue-800);
+  outline: none;
+  margin: 0.8rem 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile > img {
+  margin-right: 0.833rem;
+  width: 1.667rem;
+  border-radius: 50%;
+  outline: 0.111rem solid var(--white);
+}
+
+p > span {
+  color: var(--white);
+  transition: 0.3s ease;
+}
+
+p > span:hover,
+p > span:focus,
+p > span:focus-visible {
+  color: var(--cyan-400);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.attribution a {
+  color: var(--blue-500);
+  transition: 0.3s ease;
+}
+
+.attribution a:hover,
+.attribution a:focus,
+.attribution a:focus-visible {
+  color: var(--white);
+}
